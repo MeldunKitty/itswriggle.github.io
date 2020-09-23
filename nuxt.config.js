@@ -1,5 +1,8 @@
 export default {
     target: 'static',
+    router: {
+        base: '/itswriggle.github.io/'
+    },
     // Global page headers (https://go.nuxtjs.dev/config-head)
     head: {
         title: 'its_wriggle',
