@@ -1,0 +1,119 @@
+//Немножк наших утилиток, сброс и переменные
+@import "reset";
+@import "utils";
+@import "variables";
+
+//Подключим 2 шрифта для текста и заголовков
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed&display=swap');
+//А тут подключаем иконки as a font
+@import url('https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .vs-notification__content__header h4 {
+    font-size: 1.2rem !important;
+  }
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0,.2);
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-bottom: 1rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    &__action {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+
+  &__body {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  &__footer {
+    width: 100%;
+  }
+
+  &--thin {
+    width: 650px;
+  }
+
+  &--centered {
+    margin: 0 auto;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  &__row {
+    display: flex;
+    align-items: center;
+
+    margin-top: 3rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__item {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 0.5rem;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+//Fixes
+.vs-select__label--label {
+  transform: translate(-10px, -34px) !important;
+}
+
+.vs-input__label--label {
+  transform: translate(-10px, -34px) !important;
+}
