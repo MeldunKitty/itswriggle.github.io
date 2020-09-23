@@ -263,15 +263,16 @@ export default {
 }
 
 const projectsSeed = [
+    'LeadScoring', 'SmartPC', 'Reminder', 'bng', 'TheBell', 'Coffee', 'tgc', 'MyLive', 'itsmarket', 'TassNewm',
     '1939', 'Аудит', 'Больничный', 'Издательство', 'Командировка', 'Конференция', 'курс LSF',
     'Нашествие', 'обучение cka', 'Отпуск', 'Петпроджект', 'Подушкин', 'постнаука', 'Структрука',
     'Техподдержка', 'Умный щит', 'Учеба', 'asodesk', 'BBDO', 'biin', 'Cтруктурка', 'Caramba',
-    'CMTT', 'Coffee', 'crex', 'Crypto', 'Cupis', 'DeckRobot', 'DevOps', 'dop connector', 'essm',
+    'CMTT',  'crex', 'Crypto', 'Cupis', 'DeckRobot', 'DevOps', 'dop connector', 'essm',
     'getcider', 'GoldBar / GB', 'GPN', 'GPN ВР', 'GPN IATA PoC', 'Grafana', 'HealthCoin', 'hezzl',
     'isolate', 'ITS 24mon', 'ITS Annotate', 'ITS CP', 'ITS CRM', 'ITS Dashboard', 'ITS New 24mon',
     'ITS sms invoice', 'ITS Telegram', 'its_cinema', 'its-research', 'Its-vacation', 'its-webchat',
     'its-wifi-scaner', 'itshelp', 'ITStagram', 'ITSumma', 'itsvideo', 'Kaiten', 'kube-debugger',
-    'Legko', 'LinguaLeo', 'Livedune', 'Management', 'medical', 'LeadScoring'
+    'Legko', 'LinguaLeo', 'Livedune', 'Management', 'medical'
 ]
 
 const tasksSeed = {
