@@ -12,8 +12,18 @@ export default {
             {hid: 'description', name: 'description', content: ''}
         ],
         link: [
-            {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
+            {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
+            {
+                rel: 'stylesheet',
+                href: 'https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed&display=swap'
+            },
+            {
+                rel: 'stylesheet',
+                href: 'https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css'
+            },
+
         ]
+
     },
 
     // Global CSS (https://go.nuxtjs.dev/config-css)
