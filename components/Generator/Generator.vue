@@ -151,6 +151,7 @@ export default {
             return dayReport
         },
         generateDayProjects(projects) {
+
             if (this.form.vacation) {
                 return [
                     {
@@ -170,7 +171,7 @@ export default {
             projects.map((project_title, index) => {
                 let rnd = this.getRandomInt(1, rndSeed);
 
-                if ((rnd > rndSeed / rndDelimiter) || index === projects.length - 1) {
+                if (((rnd > rndSeed / rndDelimiter) || index === projects.length - 1) && hoursLimit !== 0) {
                     let projectHours = this.getRandomInt(1, hoursLimit)
 
                     if (projects.length === 1 || index === projects.length - 1) {
@@ -195,11 +196,8 @@ export default {
             const verb = tasksSeed.verbs[this.getRandomInt(0, tasksSeed.verbs.length)];
             const noun = tasksSeed.nouns[this.getRandomInt(0, tasksSeed.nouns.length)];
             const tech = tasksSeed.techs[this.getRandomInt(0, tasksSeed.techs.length)];
-            tasks += `${verb} ${tech} ${noun}`;
 
-            if (!recurs && this.getRandomInt(0, 4) > 2) {
-                tasks += `, ${this.generateProjectTasks(true)}`;
-            }
+            tasks += `${verb} ${tech} ${noun}`;
 
             return tasks;
         },
@@ -267,7 +265,7 @@ const projectsSeed = [
     '1939', 'Аудит', 'Больничный', 'Издательство', 'Командировка', 'Конференция', 'курс LSF',
     'Нашествие', 'обучение cka', 'Отпуск', 'Петпроджект', 'Подушкин', 'постнаука', 'Структрука',
     'Техподдержка', 'Умный щит', 'Учеба', 'asodesk', 'BBDO', 'biin', 'Cтруктурка', 'Caramba',
-    'CMTT',  'crex', 'Crypto', 'Cupis', 'DeckRobot', 'DevOps', 'dop connector', 'essm',
+    'CMTT', 'crex', 'Crypto', 'Cupis', 'DeckRobot', 'DevOps', 'dop connector', 'essm',
     'getcider', 'GoldBar / GB', 'GPN', 'GPN ВР', 'GPN IATA PoC', 'Grafana', 'HealthCoin', 'hezzl',
     'isolate', 'ITS 24mon', 'ITS Annotate', 'ITS CP', 'ITS CRM', 'ITS Dashboard', 'ITS New 24mon',
     'ITS sms invoice', 'ITS Telegram', 'its_cinema', 'its-research', 'Its-vacation', 'its-webchat',
